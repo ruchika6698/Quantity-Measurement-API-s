@@ -1,0 +1,9 @@
+C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\bin\Debug\netcoreapp2.1\BusinessLayer.deps.json
+C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\bin\Debug\netcoreapp2.1\BusinessLayer.dll
+C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\bin\Debug\netcoreapp2.1\BusinessLayer.pdb
+C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.csprojAssemblyReference.cache
+C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.AssemblyInfoInputs.cache
+C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.AssemblyInfo.cs
+C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.dll
+C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.pdb
+C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.csproj.CoreCompileInputs.cache

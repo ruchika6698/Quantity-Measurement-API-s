@@ -1,0 +1,9 @@
+C:\Users\boss\source\repos\Quantity Measurement API\CommanLayer\bin\Debug\netcoreapp2.1\CommanLayer.deps.json
+C:\Users\boss\source\repos\Quantity Measurement API\CommanLayer\bin\Debug\netcoreapp2.1\CommanLayer.dll
+C:\Users\boss\source\repos\Quantity Measurement API\CommanLayer\obj\Debug\netcoreapp2.1\CommanLayer.csprojAssemblyReference.cache
+C:\Users\boss\source\repos\Quantity Measurement API\CommanLayer\obj\Debug\netcoreapp2.1\CommanLayer.AssemblyInfoInputs.cache
+C:\Users\boss\source\repos\Quantity Measurement API\CommanLayer\obj\Debug\netcoreapp2.1\CommanLayer.AssemblyInfo.cs
+C:\Users\boss\source\repos\Quantity Measurement API\CommanLayer\bin\Debug\netcoreapp2.1\CommanLayer.pdb
+C:\Users\boss\source\repos\Quantity Measurement API\CommanLayer\obj\Debug\netcoreapp2.1\CommanLayer.csproj.CoreCompileInputs.cache
+C:\Users\boss\source\repos\Quantity Measurement API\CommanLayer\obj\Debug\netcoreapp2.1\CommanLayer.dll
+C:\Users\boss\source\repos\Quantity Measurement API\CommanLayer\obj\Debug\netcoreapp2.1\CommanLayer.pdb
