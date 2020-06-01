@@ -16,6 +16,7 @@ namespace BusinessLayer.Interface
         double Calculate(Quantity quantity);
         Quantity DeleteQuntity(int Id);
         IEnumerable<Quantity> GetAllQuantity();
+        Quantity GetspecificQuantity(int Id);
 
     }
 }

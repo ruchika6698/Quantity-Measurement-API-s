@@ -75,6 +75,24 @@ namespace RepositoryLayer.Services
                 throw exception;
             }
         }
+
+        /// <summary>
+        /// Function to get Specific Conversion Detail.
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns></returns>
+        public Quantity GetspecificQuantity(int Id)
+        {
+            try
+            {
+                Quantity quantity = dBContext.Quantities.Find(Id);
+                return quantity;
+            }
+            catch (Exception exception)
+            {
+                throw exception;
+            }
+        }
     }
 }
          

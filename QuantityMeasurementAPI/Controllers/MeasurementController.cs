@@ -121,5 +121,35 @@ namespace QuantityMeasurementAPI.Controllers
             }
         }
 
+        // <summary>
+        ///  API for get specific Quantity details
+        /// </summary>
+        /// <param name="ID">Update data</param>
+        /// <returns></returns>
+        [HttpGet("{Id}")]
+        public IActionResult GetspecificQuantity(int Id)
+        {
+            try
+            {
+                var result = BusinessLayer.GetspecificQuantity(Id);
+                //if result is not equal to zero then details found
+                if (!result.Equals(null))
+                {
+                    var Status = "Success";
+                    var Message = "Employee Data found ";
+                    return this.Ok(new { Status, Message, Data = result });
+                }
+                else                                           //Data is not found
+                {
+                    var Status = "Unsuccess";
+                    var Message = "Employee Data is not found";
+                    return this.BadRequest(new { Status, Message, Data = result });
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
     }
 }

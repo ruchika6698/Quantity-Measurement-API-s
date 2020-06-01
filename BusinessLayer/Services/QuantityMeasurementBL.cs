@@ -72,6 +72,23 @@ namespace BusinessLayer.Services
         }
 
         /// <summary>
+        ///  API for get specific Quantity details
+        /// </summary>
+        /// <param name="Id"> get specific Entry</param>
+        /// <returns>Return Specific Entry</returns>
+        public Quantity GetspecificQuantity(int Id)
+        {
+            try
+            {
+                return _QuantityMeasurementRL.GetspecificQuantity(Id);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        /// <summary>
         /// Function To Perform Calculations For Conversion.
         /// </summary>
         /// <param name="quantity"></param>
