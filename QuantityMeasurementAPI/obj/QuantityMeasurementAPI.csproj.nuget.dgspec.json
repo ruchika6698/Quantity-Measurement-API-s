@@ -26,7 +26,14 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
-            "projectReferences": {}
+            "projectReferences": {
+              "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\CommanLayer\\CommanLayer.csproj": {
+                "projectPath": "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\CommanLayer\\CommanLayer.csproj"
+              },
+              "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\RepositoryLayer\\RepositoryLayer.csproj": {
+                "projectPath": "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\RepositoryLayer\\RepositoryLayer.csproj"
+              }
+            }
           }
         },
         "warningProperties": {

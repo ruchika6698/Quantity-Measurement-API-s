@@ -373,7 +373,9 @@
       },
       "BusinessLayer/1.0.0": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "2.1.1"
+          "CommanLayer": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "2.1.1",
+          "RepositoryLayer": "1.0.0"
         },
         "runtime": {
           "BusinessLayer.dll": {}

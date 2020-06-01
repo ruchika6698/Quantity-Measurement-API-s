@@ -4635,7 +4635,9 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": "2.1.0"
+          "CommanLayer": "1.0.0",
+          "Microsoft.EntityFrameworkCore": "2.1.0",
+          "RepositoryLayer": "1.0.0"
         },
         "compile": {
           "bin/placeholder/BusinessLayer.dll": {}
