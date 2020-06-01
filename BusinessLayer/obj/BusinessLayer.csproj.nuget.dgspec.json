@@ -26,6 +26,72 @@
         },
         "frameworks": {
           "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\CommanLayer\\CommanLayer.csproj": {
+                "projectPath": "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\CommanLayer\\CommanLayer.csproj"
+              },
+              "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\RepositoryLayer\\RepositoryLayer.csproj": {
+                "projectPath": "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\RepositoryLayer\\RepositoryLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\CommanLayer\\CommanLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\CommanLayer\\CommanLayer.csproj",
+        "projectName": "CommanLayer",
+        "projectPath": "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\CommanLayer\\CommanLayer.csproj",
+        "packagesPath": "C:\\Users\\boss\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\CommanLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\boss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
             "projectReferences": {}
           }
         },
@@ -42,9 +108,72 @@
               "target": "Package",
               "version": "[2.1.0, )"
             },
-            "Microsoft.EntityFrameworkCore.Tools": {
+            "Microsoft.NETCore.App": {
+              "suppressParent": "All",
               "target": "Package",
-              "version": "[2.1.1, )"
+              "version": "[2.1.0, )",
+              "autoReferenced": true
+            }
+          },
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.201\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\RepositoryLayer\\RepositoryLayer.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\RepositoryLayer\\RepositoryLayer.csproj",
+        "projectName": "RepositoryLayer",
+        "projectPath": "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\RepositoryLayer\\RepositoryLayer.csproj",
+        "packagesPath": "C:\\Users\\boss\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\RepositoryLayer\\obj\\",
+        "projectStyle": "PackageReference",
+        "configFilePaths": [
+          "C:\\Users\\boss\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "netcoreapp2.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp2.1": {
+            "projectReferences": {
+              "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\CommanLayer\\CommanLayer.csproj": {
+                "projectPath": "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\CommanLayer\\CommanLayer.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp2.1": {
+          "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[2.1.0, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[2.1.0, )"
             },
             "Microsoft.NETCore.App": {
               "suppressParent": "All",

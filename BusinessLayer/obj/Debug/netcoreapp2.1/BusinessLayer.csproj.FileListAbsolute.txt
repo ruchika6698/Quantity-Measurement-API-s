@@ -7,3 +7,8 @@ C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\obj\Debug\netc
 C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.dll
 C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.pdb
 C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.csproj.CoreCompileInputs.cache
+C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\bin\Debug\netcoreapp2.1\CommanLayer.dll
+C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\bin\Debug\netcoreapp2.1\CommanLayer.pdb
+C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\obj\Debug\netcoreapp2.1\BusinessLayer.csproj.CopyComplete
+C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\bin\Debug\netcoreapp2.1\RepositoryLayer.dll
+C:\Users\boss\source\repos\Quantity Measurement API\BusinessLayer\bin\Debug\netcoreapp2.1\RepositoryLayer.pdb
