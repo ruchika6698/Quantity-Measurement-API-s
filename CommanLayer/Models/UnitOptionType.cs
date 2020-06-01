@@ -9,6 +9,9 @@ namespace CommanLayer
         public enum OptionType
         {
             // Length Units
+            CmToInch,InchToCm,
+            CmToFeet,FeetToCm,
+            CmToYard,YardToCm,
             InchToFeet, InchToYard,
             FeetToInch, FeetToYard,
             YardToInch, YardToFeet,

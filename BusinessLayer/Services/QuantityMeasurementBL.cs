@@ -53,6 +53,9 @@ namespace BusinessLayer.Services
                 const double INCH_FEET_CONSTANT = 12;
                 const double INCH_YARD_CONSTANT = 36;
                 const double FEET_YARD_CONSTANT = 3;
+                const double CM_INCH_CONSTANT = 2.5;
+                const double CM_FEET_CONSTANT = 30.48;
+                const double CM_YARD_CONSTANT = 91.44;
                 const double WEIGHT_CONSTANT = 1000;
                 const double GALLON_TO_LITRE_CONSTANT = 3.78;
                 const double GALLON_TO_ML_CONSTANT = 3785.41;
@@ -81,6 +84,30 @@ namespace BusinessLayer.Services
                 else if (operation == OptionType.YardToFeet.ToString())
                 {
                     result = value * FEET_YARD_CONSTANT;
+                }
+                else if (operation == OptionType.CmToInch.ToString())
+                {
+                    result = value / CM_INCH_CONSTANT;
+                }
+                else if (operation == OptionType.InchToCm.ToString())
+                {
+                    result = value * CM_INCH_CONSTANT;
+                }
+                else if (operation == OptionType.CmToFeet.ToString())
+                {
+                    result = value / CM_FEET_CONSTANT;
+                }
+                else if (operation == OptionType.FeetToCm.ToString())
+                {
+                    result = value * CM_FEET_CONSTANT;
+                }
+                else if (operation == OptionType.CmToYard.ToString())
+                {
+                    result = value / CM_YARD_CONSTANT;
+                }
+                else if (operation == OptionType.YardToCm.ToString())
+                {
+                    result = value * CM_YARD_CONSTANT;
                 }
                 else if (operation == OptionType.GramToKg.ToString())
                 {
