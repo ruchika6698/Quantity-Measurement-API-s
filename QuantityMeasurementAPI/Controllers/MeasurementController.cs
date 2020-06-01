@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using BusinessLayer.Interface;
 using CommanLayer;
+using CommanLayer.CustomException;
 using CommanLayer.Models;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
@@ -36,6 +37,10 @@ namespace QuantityMeasurementAPI.Controllers
             try
             {
                 var result = BusinessLayer.Convert(Info);
+                if (result == null)
+                {
+                    return BadRequest(new { Success = false, message = CustomException.ExceptionType.INPUT_NULL });
+                }
                 //if entry is not equal to null
                 if (!result.Equals(null))
                 {
@@ -48,6 +53,37 @@ namespace QuantityMeasurementAPI.Controllers
                     var status = "False";
                     var Message = "New Entry is not Added";
                     return this.BadRequest(new { status, Message, data = Info });
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        /// <summary>
+        ///  API for Delete data
+        /// </summary>
+        /// <param name="Id">Delete data</param>
+        /// <returns></returns>
+        [HttpDelete("{Id}")]
+        public IActionResult DeleteQuntity(int Id)
+        {
+            try
+            {
+                var result = BusinessLayer.DeleteQuntity(Id);
+                //if result is not equal to zero then details Deleted sucessfully
+                if (!result.Equals(null))
+                {
+                    var Status = "True";
+                    var Message = "Data deleted Sucessfully";
+                    return this.Ok(new { Status, Message, Data = Id });
+                }
+                else                                           //Data is not deleted 
+                {
+                    var Status = "False";
+                    var Message = "Data is not deleted Sucessfully";
+                    return this.BadRequest(new { Status, Message, Data = Id });
                 }
             }
             catch (Exception e)

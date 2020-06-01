@@ -13,5 +13,7 @@ namespace RepositoryLayer.Interface
         /// <param name="quantity"></param>
         /// <returns>Conversion of units</returns>
         Quantity Add(Quantity quantity);
+        Quantity DeleteQuntity(int Id);
+
     }
 }

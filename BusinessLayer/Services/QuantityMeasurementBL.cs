@@ -17,6 +17,11 @@ namespace BusinessLayer.Services
         {
             _QuantityMeasurementRL = QuantityMeasurementRL;
         }
+        /// <summary>
+        /// Method to Add Conversion Detail
+        /// </summary>
+        /// <param name="quantit">value from quantity model</param>
+        /// <returns>Return result of conversion</returns>
         public Quantity Convert(Quantity quantity)
         {
             try
@@ -34,9 +39,22 @@ namespace BusinessLayer.Services
             }
         }
 
-
-
-
+        /// <summary>
+        ///  API for Delete data
+        /// </summary>
+        /// <param name="Id">Delete data</param>
+        /// <returns></returns>
+        public Quantity DeleteQuntity(int Id)
+        {
+            try
+            {
+                return _QuantityMeasurementRL.DeleteQuntity(Id);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
 
         /// <summary>
         /// Function To Perform Calculations For Conversion.

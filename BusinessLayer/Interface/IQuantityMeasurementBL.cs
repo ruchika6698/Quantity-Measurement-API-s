@@ -14,6 +14,7 @@ namespace BusinessLayer.Interface
         /// <returns>Conversion of units</returns>
         Quantity Convert(Quantity quantity);
         double Calculate(Quantity quantity);
+        Quantity DeleteQuntity(int Id);
 
     }
 }

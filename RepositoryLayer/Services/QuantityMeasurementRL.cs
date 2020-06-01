@@ -38,6 +38,28 @@ namespace RepositoryLayer.Services
                 throw new Exception(e.Message);
             }
         }
+        /// <summary>
+        /// Method to Add Conversion Detail to Database.
+        /// </summary>
+        /// <param name="Id"></param>
+        /// <returns>Conversion result</returns>
+        public Quantity DeleteQuntity(int Id)
+        {
+            try
+            {
+                Quantity quantity = dBContext.Quantities.Find(Id);
+                if(quantity != null)
+                {
+                    dBContext.Quantities.Remove(quantity);
+                    dBContext.SaveChanges();
+                }
+                return quantity;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
     }
 }
          
