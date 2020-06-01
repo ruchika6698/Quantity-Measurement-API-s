@@ -14,9 +14,7 @@ namespace RepositoryLayer.ApplicationDatabase
         {
 
         }
-        public DbSet<Modifier> Modifier { get; set; }
-
-        public DbSet<Quantity> Quantity { get; set; }
-
+        public DbSet<Quantity> Quantities { get; set; }
+        public DbSet<Comparision> Comparisions { get; set; }
     }
 }

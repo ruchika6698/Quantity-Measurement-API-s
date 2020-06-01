@@ -10,8 +10,8 @@ using RepositoryLayer.ApplicationDatabase;
 namespace RepositoryLayer.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20200531124359_InitialMigration")]
-    partial class InitialMigration
+    [Migration("20200601075520_initialmigration")]
+    partial class initialmigration
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -21,7 +21,7 @@ namespace RepositoryLayer.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("CommanLayer.Models.Modifier", b =>
+            modelBuilder.Entity("CommanLayer.Models.Comparision", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -29,14 +29,21 @@ namespace RepositoryLayer.Migrations
 
                     b.Property<DateTime>("DateOnCreation");
 
-                    b.Property<string>("OptionType")
+                    b.Property<string>("Result");
+
+                    b.Property<double>("Value_One");
+
+                    b.Property<string>("Value_One_Unit")
                         .IsRequired();
 
-                    b.Property<double>("Value");
+                    b.Property<double>("Value_Two");
+
+                    b.Property<string>("Value_Two_Unit")
+                        .IsRequired();
 
                     b.HasKey("Id");
 
-                    b.ToTable("Modifier");
+                    b.ToTable("Comparisions");
                 });
 
             modelBuilder.Entity("CommanLayer.Models.Quantity", b =>
@@ -50,11 +57,13 @@ namespace RepositoryLayer.Migrations
                     b.Property<string>("OptionType")
                         .IsRequired();
 
+                    b.Property<double>("Result");
+
                     b.Property<double>("Value");
 
                     b.HasKey("Id");
 
-                    b.ToTable("Quantity");
+                    b.ToTable("Quantities");
                 });
 #pragma warning restore 612, 618
         }
