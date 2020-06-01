@@ -9,14 +9,18 @@ namespace CommanLayer.Models
     public class Quantity
     {
         [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int Id { get; set; }
+        //option type for different conversion
         [Required]
         [RegularExpression(@"^[A-Z][a-zA-Z]*$")]
         public string OptionType { get; set; }
+        //value for input
         [Required]
-        [Column(TypeName = "decimal(18,2)")]
-        [RegularExpression(@"^\d+(\.\d{1,2})?")]
         public double Value { get; set; }
-        public DateTime DateOnCreation { get; set; } = DateTime.Today;
+        //result for conversion
+        public double Result { get; set; }
+        //date and time when result is generated
+        public DateTime DateOnCreation { get; set; } = DateTime.Now;
     }
 }

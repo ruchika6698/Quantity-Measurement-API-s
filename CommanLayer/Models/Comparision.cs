@@ -1,36 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Text;
 
 namespace CommanLayer.Models
 {
     public class Comparision
     {
-        public double ValueOne { get; set; }
-        public UnitOptionType.Unit FirstUnit { get; set; }
-        public double ValueTwo { get; set; }
-        public UnitOptionType.Unit SecondUnit { get; set; }
+        [Key]
+        public int Id { get; set; }
 
-        /// <summary>
-        /// Constructor to initlize properties
-        /// </summary>
-        /// <param name="in_valueOne"></param>
-        /// <param name="firstvalue"></param>
-        /// <param name="in_valueTwo"></param>
-        /// <param name="secondvalue"></param>
-        public Comparision(double in_valueOne, UnitOptionType.Unit firstvalue, double in_valueTwo, UnitOptionType.Unit secondvalue)
-        {
-            this.ValueOne = in_valueOne;
-            this.ValueTwo = in_valueTwo;
-            this.FirstUnit = firstvalue;
-            this.SecondUnit = secondvalue;
-        }
-        /// <summary>
-        /// Empty constructor to initialize empty object
-        /// </summary>
-        public Comparision()
-        {
+        [Required]
+        public double Value_One { get; set; }
 
-        }
+        [Required]
+        [RegularExpression(@"^[A-Z][a-zA-Z]*$")]
+        public string Value_One_Unit { get; set; }
+
+        [Required]
+        public double Value_Two { get; set; }
+
+        [Required]
+        [RegularExpression(@"^[A-Z][a-zA-Z]*$")]
+        public string Value_Two_Unit { get; set; }
+
+        public string Result { get; set; }
+        public DateTime DateOnCreation { get; set; } = DateTime.Today;
     }
 }

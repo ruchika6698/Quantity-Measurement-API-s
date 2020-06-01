@@ -9,12 +9,11 @@ namespace CommanLayer
         public enum OptionType
         {
             // Length Units
-            CentemeterToInch, CentimeterToFeet, CentimeterToYard,
-            InchToCentimeter, InchToFeet, InchToYard,
-            FeetToCentimeter, FeetToInch, FeetToYard,
-            YardToCentimeter, YardToInch, YardToFeet,
+            InchToFeet, InchToYard,
+            FeetToInch, FeetToYard,
+            YardToInch, YardToFeet,
             // Volume Units
-            MLToLiter, MLTogallon,
+            MLToLiter, MLToGallon,
             LiterToML, LiterToGallon,
             GallonToML, GallonToLiter,
             //Weight Units
