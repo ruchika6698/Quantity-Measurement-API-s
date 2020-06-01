@@ -57,6 +57,21 @@ namespace BusinessLayer.Services
         }
 
         /// <summary>
+        ///  API for get all details
+        /// </summary>
+        public IEnumerable<Quantity> GetAllQuantity()
+        {
+            try
+            {
+                return _QuantityMeasurementRL.GetAllQuantity();
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
+        /// <summary>
         /// Function To Perform Calculations For Conversion.
         /// </summary>
         /// <param name="quantity"></param>

@@ -15,6 +15,7 @@ namespace BusinessLayer.Interface
         Quantity Convert(Quantity quantity);
         double Calculate(Quantity quantity);
         Quantity DeleteQuntity(int Id);
+        IEnumerable<Quantity> GetAllQuantity();
 
     }
 }

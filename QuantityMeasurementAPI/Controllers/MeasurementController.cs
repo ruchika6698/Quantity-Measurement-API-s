@@ -44,13 +44,13 @@ namespace QuantityMeasurementAPI.Controllers
                 //if entry is not equal to null
                 if (!result.Equals(null))
                 {
-                    var status = "True";
+                    var status = "Success";
                     var Message = "New Entry Added Sucessfully";
                     return this.Ok(new { status, Message, data = Info });
                 }
                 else                                              //Entry is not added
                 {
-                    var status = "False";
+                    var status = "Unsuccess";
                     var Message = "New Entry is not Added";
                     return this.BadRequest(new { status, Message, data = Info });
                 }
@@ -75,16 +75,45 @@ namespace QuantityMeasurementAPI.Controllers
                 //if result is not equal to zero then details Deleted sucessfully
                 if (!result.Equals(null))
                 {
-                    var Status = "True";
+                    var Status = "Success";
                     var Message = "Data deleted Sucessfully";
                     return this.Ok(new { Status, Message, Data = Id });
                 }
                 else                                           //Data is not deleted 
                 {
-                    var Status = "False";
+                    var Status = "Unsuccess";
                     var Message = "Data is not deleted Sucessfully";
                     return this.BadRequest(new { Status, Message, Data = Id });
                 }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+        /// <summary>
+        ///  API for get all emplyee details
+        /// </summary>
+        [HttpGet]
+        public ActionResult<IEnumerable<Quantity>> GetAllQuantity()
+        {
+            try
+            {
+                var result = BusinessLayer.GetAllQuantity();
+                //if result is not equal to zero then details found
+                if (!result.Equals(null))
+                {
+                    var Status = "Success";
+                    var Message = "Conversion Data found ";
+                    return this.Ok(new { Status, Message, Data = result });
+                }
+                else                                           //Data is not found
+                {
+                    var Status = "Unsuccess";
+                    var Message = "Conversion Data is not found";
+                    return this.BadRequest(new { Status, Message, Data = result });
+                }
+
             }
             catch (Exception e)
             {

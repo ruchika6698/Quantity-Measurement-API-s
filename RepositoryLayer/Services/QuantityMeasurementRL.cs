@@ -60,6 +60,21 @@ namespace RepositoryLayer.Services
                 throw new Exception(e.Message);
             }
         }
+
+        /// <summary>
+        /// Method To Get All Convserion Details.
+        /// </summary>
+        public IEnumerable<Quantity> GetAllQuantity()
+        {
+            try
+            {
+                return dBContext.Quantities;
+            }
+            catch (Exception exception)
+            {
+                throw exception;
+            }
+        }
     }
 }
          

@@ -14,6 +14,7 @@ namespace RepositoryLayer.Interface
         /// <returns>Conversion of units</returns>
         Quantity Add(Quantity quantity);
         Quantity DeleteQuntity(int Id);
+        IEnumerable<Quantity> GetAllQuantity();
 
     }
 }
