@@ -26,6 +26,6 @@ namespace CommanLayer.Models
         public string Value_Two_Unit { get; set; }
 
         public string Result { get; set; }
-        public DateTime DateOnCreation { get; set; } = DateTime.Today;
+        public DateTime DateOnCreation { get; set; } = DateTime.Now;
     }
 }

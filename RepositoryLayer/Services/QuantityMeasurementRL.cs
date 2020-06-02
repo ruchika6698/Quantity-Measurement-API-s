@@ -70,9 +70,9 @@ namespace RepositoryLayer.Services
             {
                 return dBContext.Quantities;
             }
-            catch (Exception exception)
+            catch (Exception e)
             {
-                throw exception;
+                throw new Exception(e.Message);
             }
         }
 
@@ -88,9 +88,28 @@ namespace RepositoryLayer.Services
                 Quantity quantity = dBContext.Quantities.Find(Id);
                 return quantity;
             }
-            catch (Exception exception)
+            catch (Exception e)
             {
-                throw exception;
+                throw new Exception(e.Message);
+            }
+        }
+
+        /// <summary>
+        /// Function To Add Comparison Detail to Database.
+        /// </summary>
+        /// <param name="comparison"></param>
+        /// <returns></returns>
+        public Comparision AddComparison(Comparision comparison)
+        {
+            try
+            {
+                dBContext.Comparisions.Add(comparison);
+                dBContext.SaveChanges();
+                return comparison;
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
             }
         }
     }

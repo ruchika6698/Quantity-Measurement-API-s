@@ -6,7 +6,7 @@ namespace CommanLayer
 {
     public class UnitOptionType
     {
-        public enum OptionType
+        public enum OprationType
         {
             // Length Units
             InchToFeet, InchToYard,
@@ -30,13 +30,13 @@ namespace CommanLayer
         public enum Unit
         {
             // length units Id=^1
-            Cm = 1, Inch = 2, Feet = 3, Yard = 4,
+            Cm , Inch, Feet , Yard ,
             // liter units Id=^2
-            Ml = 11, Liter = 12, Gallon = 13,
+            Ml, Liter , Gallon,
             // weight units Id=^3
-            Gram = 21, Kg = 22, Tone = 23,
+            Gram, Kg, Tone,
             // temperature units Id:^4
-            C = 31, F = 32
+            C , F
         }
     }
 }

@@ -151,5 +151,42 @@ namespace QuantityMeasurementAPI.Controllers
                 throw new Exception(e.Message);
             }
         }
+
+        /// <summary>
+        /// Method to Add Conversion Detail
+        /// </summary>
+        /// <param name="Info"></param>
+        /// <returns> add conversion in database </returns>
+        [HttpPost]
+        [Route("comparison")]
+        public IActionResult AddComparison([FromBody]Comparision Info)
+        {
+            try
+            {
+                var result = BusinessLayer.AddComparison(Info);
+                if (result == null)
+                {
+                    return BadRequest(new { Success = false, message = CustomException.ExceptionType.INPUT_NULL });
+                }
+                //if entry is not equal to null
+                if (!result.Equals(null))
+                {
+                    var status = "Success";
+                    var Message = "New Entry Added Sucessfully";
+                    return this.Ok(new { status, Message, data = Info });
+                }
+                else                                              //Entry is not added
+                {
+                    var status = "Unsuccess";
+                    var Message = "New Entry is not Added";
+                    return this.BadRequest(new { status, Message, data = Info });
+                }
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
+        }
+
     }
 }
