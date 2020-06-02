@@ -29,7 +29,7 @@ namespace QuantityMeasurementAPI.Controllers
         /// Method to Add Conversion Detail
         /// </summary>
         /// <param name="Info"></param>
-        /// <returns></returns>
+        /// <returns> add conversion in database </returns>
         [HttpPost]
         [Route("addnewentry")]
         public IActionResult Convert([FromBody]Quantity  Info)

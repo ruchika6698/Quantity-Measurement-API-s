@@ -17,6 +17,10 @@ namespace BusinessLayer.Interface
         Quantity DeleteQuntity(int Id);
         IEnumerable<Quantity> GetAllQuantity();
         Quantity GetspecificQuantity(int Id);
-
+        Comparision AddComparison(Comparision comparison);
+        string SetBaseUnit(Quantity quantity);
+        Comparision ConvertToBaseUnit(Comparision comparison);
+        string SetOperationType(string Unit_Value);
+        string CompareConversion(Comparision comparison);
     }
 }
