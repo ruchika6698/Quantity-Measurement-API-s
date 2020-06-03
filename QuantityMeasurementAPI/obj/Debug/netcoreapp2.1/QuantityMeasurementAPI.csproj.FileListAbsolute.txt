@@ -13,7 +13,6 @@ C:\Users\boss\source\repos\Quantity Measurement API\QuantityMeasurementAPI\obj\D
 C:\Users\boss\source\repos\Quantity Measurement API\QuantityMeasurementAPI\obj\Debug\netcoreapp2.1\QuantityMeasurementAPI.RazorTargetAssemblyInfo.cache
 C:\Users\boss\source\repos\Quantity Measurement API\QuantityMeasurementAPI\obj\Debug\netcoreapp2.1\QuantityMeasurementAPI.genruntimeconfig.cache
 C:\Users\boss\source\repos\Quantity Measurement API\QuantityMeasurementAPI\bin\Debug\netcoreapp2.1\QuantityMeasurementAPI.pdb
-C:\Users\boss\source\repos\Quantity Measurement API\QuantityMeasurementAPI\obj\Debug\netcoreapp2.1\QuantityMeasurementAPI.csproj.CoreCompileInputs.cache
 C:\Users\boss\source\repos\Quantity Measurement API\QuantityMeasurementAPI\obj\Debug\netcoreapp2.1\QuantityMeasurementAPI.dll
 C:\Users\boss\source\repos\Quantity Measurement API\QuantityMeasurementAPI\obj\Debug\netcoreapp2.1\QuantityMeasurementAPI.pdb
 C:\Users\boss\source\repos\Quantity Measurement API\QuantityMeasurementAPI\bin\Debug\netcoreapp2.1\BusinessLayer.dll
@@ -23,3 +22,4 @@ C:\Users\boss\source\repos\Quantity Measurement API\QuantityMeasurementAPI\bin\D
 C:\Users\boss\source\repos\Quantity Measurement API\QuantityMeasurementAPI\bin\Debug\netcoreapp2.1\CommanLayer.pdb
 C:\Users\boss\source\repos\Quantity Measurement API\QuantityMeasurementAPI\bin\Debug\netcoreapp2.1\RepositoryLayer.pdb
 C:\Users\boss\source\repos\Quantity Measurement API\QuantityMeasurementAPI\obj\Debug\netcoreapp2.1\QuantityMeasurementAPI.csproj.CopyComplete
+C:\Users\boss\source\repos\Quantity Measurement API\QuantityMeasurementAPI\obj\Debug\netcoreapp2.1\QuantityMeasurementAPI.csproj.CoreCompileInputs.cache

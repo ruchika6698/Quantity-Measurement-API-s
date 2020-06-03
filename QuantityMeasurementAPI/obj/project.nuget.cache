@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "2Jg/h0+BlIPfZSY3b3LGCxF9FE+F101sNrxXWD9e90VxGt/4HTZQLujUMQ5gzLbHPl6I4y/S32uUnGjni0Nxyw==",
+  "dgSpecHash": "8mdgUQmk15A0PYEZVj8rdutKzLNwf/Hc/kaxKsEFmOMdI+mE+UVJDwSUhQhhkxWe+QKXXF3sBoLy/fk9I0E1sg==",
   "success": true,
   "projectFilePath": "C:\\Users\\boss\\source\\repos\\Quantity Measurement API\\QuantityMeasurementAPI\\QuantityMeasurementAPI.csproj",
   "expectedPackageFiles": [
@@ -205,6 +205,9 @@
     "C:\\Users\\boss\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\boss\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\boss\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\boss\\.nuget\\packages\\swashbuckle.aspnetcore.swagger\\2.1.0\\swashbuckle.aspnetcore.swagger.2.1.0.nupkg.sha512",
+    "C:\\Users\\boss\\.nuget\\packages\\swashbuckle.aspnetcore.swaggergen\\2.1.0\\swashbuckle.aspnetcore.swaggergen.2.1.0.nupkg.sha512",
+    "C:\\Users\\boss\\.nuget\\packages\\swashbuckle.aspnetcore.swaggerui\\2.1.0\\swashbuckle.aspnetcore.swaggerui.2.1.0.nupkg.sha512",
     "C:\\Users\\boss\\.nuget\\packages\\system.appcontext\\4.3.0\\system.appcontext.4.3.0.nupkg.sha512",
     "C:\\Users\\boss\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\boss\\.nuget\\packages\\system.collections\\4.3.0\\system.collections.4.3.0.nupkg.sha512",

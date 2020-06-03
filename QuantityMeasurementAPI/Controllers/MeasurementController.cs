@@ -44,15 +44,15 @@ namespace QuantityMeasurementAPI.Controllers
                 //if entry is not equal to null
                 if (!result.Equals(null))
                 {
-                    var status = "Success";
+                    var Success = "True";
                     var Message = "New Entry Added Sucessfully";
-                    return this.Ok(new { status, Message, data = Info });
+                    return this.Ok(new { Success, Message, data = Info });
                 }
                 else                                              //Entry is not added
                 {
-                    var status = "Unsuccess";
+                    var Success = "False";
                     var Message = "New Entry is not Added";
-                    return this.BadRequest(new { status, Message, data = Info });
+                    return this.BadRequest(new { Success, Message, data = Info });
                 }
             }
             catch (Exception e)
@@ -75,15 +75,15 @@ namespace QuantityMeasurementAPI.Controllers
                 //if result is not equal to zero then details Deleted sucessfully
                 if (!result.Equals(null))
                 {
-                    var Status = "Success";
+                    var Success = "True";
                     var Message = "Data deleted Sucessfully";
-                    return this.Ok(new { Status, Message, Data = Id });
+                    return this.Ok(new { Success, Message, Data = Id });
                 }
                 else                                           //Data is not deleted 
                 {
-                    var Status = "Unsuccess";
+                    var Success = "False";
                     var Message = "Data is not deleted Sucessfully";
-                    return this.BadRequest(new { Status, Message, Data = Id });
+                    return this.BadRequest(new { Success, Message, Data = Id });
                 }
             }
             catch (Exception e)
@@ -103,15 +103,15 @@ namespace QuantityMeasurementAPI.Controllers
                 //if result is not equal to zero then details found
                 if (!result.Equals(null))
                 {
-                    var Status = "Success";
+                    var Success = "True";
                     var Message = "Conversion Data found ";
-                    return this.Ok(new { Status, Message, Data = result });
+                    return this.Ok(new { Success, Message, Data = result });
                 }
                 else                                           //Data is not found
                 {
-                    var Status = "Unsuccess";
+                    var Success = "False";
                     var Message = "Conversion Data is not found";
-                    return this.BadRequest(new { Status, Message, Data = result });
+                    return this.BadRequest(new { Success, Message, Data = result });
                 }
 
             }
@@ -135,15 +135,15 @@ namespace QuantityMeasurementAPI.Controllers
                 //if result is not equal to zero then details found
                 if (!result.Equals(null))
                 {
-                    var Status = "Success";
-                    var Message = "Employee Data found ";
-                    return this.Ok(new { Status, Message, Data = result });
+                    var Success = "True";
+                    var Message = "Conversion Data found ";
+                    return this.Ok(new { Success, Message, Data = result });
                 }
                 else                                           //Data is not found
                 {
-                    var Status = "Unsuccess";
-                    var Message = "Employee Data is not found";
-                    return this.BadRequest(new { Status, Message, Data = result });
+                    var Success = "False";
+                    var Message = "Conversion Data is not found";
+                    return this.BadRequest(new { Success, Message, Data = result });
                 }
             }
             catch (Exception e)
@@ -171,15 +171,15 @@ namespace QuantityMeasurementAPI.Controllers
                 //if entry is not equal to null
                 if (!result.Equals(null))
                 {
-                    var status = "Success";
+                    var Success = "True";
                     var Message = "New Entry Added Sucessfully";
-                    return this.Ok(new { status, Message, data = Info });
+                    return this.Ok(new { Success, Message, data = Info });
                 }
                 else                                              //Entry is not added
                 {
-                    var status = "Unsuccess";
+                    var Success = "False";
                     var Message = "New Entry is not Added";
-                    return this.BadRequest(new { status, Message, data = Info });
+                    return this.BadRequest(new { Success, Message, data = Info });
                 }
             }
             catch (Exception e)
