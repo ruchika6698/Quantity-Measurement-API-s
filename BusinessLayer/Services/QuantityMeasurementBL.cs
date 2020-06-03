@@ -114,7 +114,7 @@ namespace BusinessLayer.Services
         /// Function To Perform Calculations For Conversion.
         /// </summary>
         /// <param name="quantity"></param>
-        /// <returns></returns>
+        /// <returns> Conversion result </returns>
         public double Calculate(Quantity quantity)
         {
             try
@@ -246,10 +246,10 @@ namespace BusinessLayer.Services
         }
 
         /// <summary>
-        /// Function To Perform Comparison.
+        /// Method To Perform Comparison.
         /// </summary>
         /// <param name="comparison"></param>
-        /// <returns></returns>
+        /// <returns> Comparison result </returns>
         public string CompareConversion(Comparision comparison)
         {
             try
@@ -343,7 +343,7 @@ namespace BusinessLayer.Services
         /// Function For Converting To Base Unit.
         /// </summary>
         /// <param name="comparison"></param>
-        /// <returns></returns>
+        /// <returns> convert to base unit </returns>
         public Comparision ConvertToBaseUnit(Comparision comparison)
         {
             try
@@ -403,7 +403,7 @@ namespace BusinessLayer.Services
         /// Function For Setting Base Unit.
         /// </summary>
         /// <param name="quantity"></param>
-        /// <returns></returns>
+        /// <returns>set the base unit</returns>
         public string SetBaseUnit(Quantity quantity)
         {
             try

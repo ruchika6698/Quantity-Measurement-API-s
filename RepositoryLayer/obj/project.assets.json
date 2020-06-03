@@ -912,9 +912,6 @@
       "CommanLayer/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v2.1",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "2.1.0"
-        },
         "compile": {
           "bin/placeholder/CommanLayer.dll": {}
         },
@@ -3524,7 +3521,6 @@
   "projectFileDependencyGroups": {
     ".NETCoreApp,Version=v2.1": [
       "CommanLayer >= 1.0.0",
-      "Microsoft.EntityFrameworkCore >= 2.1.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 2.1.0",
       "Microsoft.NETCore.App >= 2.1.0"
     ]
@@ -3570,10 +3566,6 @@
     "frameworks": {
       "netcoreapp2.1": {
         "dependencies": {
-          "Microsoft.EntityFrameworkCore": {
-            "target": "Package",
-            "version": "[2.1.0, )"
-          },
           "Microsoft.EntityFrameworkCore.SqlServer": {
             "target": "Package",
             "version": "[2.1.0, )"

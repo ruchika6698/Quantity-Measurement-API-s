@@ -38,7 +38,7 @@ namespace QuantityMeasurementAPI
             services.AddDbContextPool<AppDbContext>(
                 options => options.UseSqlServer(Configuration.GetConnectionString("QuantityMeasurement")));
             services.AddMvc().SetCompatibilityVersion(CompatibilityVersion.Version_2_1);
-
+            
             services.AddSwaggerGen(c =>
             {
                 c.SwaggerDoc("v1", new Info { Title = "Quantity Measurement API", Description = "Swagger Quantity Measurement API" });

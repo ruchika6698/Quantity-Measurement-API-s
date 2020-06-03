@@ -29,13 +29,13 @@ namespace CommanLayer
         // All units
         public enum Unit
         {
-            // length units Id=^1
+            // length units 
             Cm , Inch, Feet , Yard ,
-            // liter units Id=^2
+            // liter units 
             Ml, Liter , Gallon,
-            // weight units Id=^3
+            // weight units 
             Gram, Kg, Tone,
-            // temperature units Id:^4
+            // temperature units 
             C , F
         }
     }

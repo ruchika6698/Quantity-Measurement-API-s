@@ -13,13 +13,18 @@ namespace RepositoryLayer.Services
         private AppDbContext dBContext;
 
         /// <summary>
-        /// Parameter Constructor For Seting DbContext Reference by DI.
+        /// Parameter Constructor For Seting DbContext Reference.
         /// </summary>
         /// <param name="dBContext"></param>
         public QuantityMeasurementRL(AppDbContext dBContext)
         {
             this.dBContext = dBContext;
         }
+
+        public QuantityMeasurementRL()
+        {
+        }
+
         /// <summary>
         /// Method to Add Conversion Detail to Database.
         /// </summary>
@@ -29,7 +34,9 @@ namespace RepositoryLayer.Services
         {
             try
             {
+                //add Data in database
                 dBContext.Quantities.Add(quantity);
+                //saves all changes in database
                 dBContext.SaveChanges();
                 return quantity;
             }
@@ -50,7 +57,9 @@ namespace RepositoryLayer.Services
                 Quantity quantity = dBContext.Quantities.Find(Id);
                 if(quantity != null)
                 {
+                    //Remove Data in database
                     dBContext.Quantities.Remove(quantity);
+                    //saves all changes in database
                     dBContext.SaveChanges();
                 }
                 return quantity;
@@ -85,6 +94,7 @@ namespace RepositoryLayer.Services
         {
             try
             {
+                //Find data from database by ID
                 Quantity quantity = dBContext.Quantities.Find(Id);
                 return quantity;
             }
@@ -103,7 +113,9 @@ namespace RepositoryLayer.Services
         {
             try
             {
+                //send the data to database and add
                 dBContext.Comparisions.Add(comparison);
+                //saves all changes in database
                 dBContext.SaveChanges();
                 return comparison;
             }

@@ -14,7 +14,10 @@ namespace RepositoryLayer.ApplicationDatabase
         {
 
         }
+        //Dbset for Quantity table
         public DbSet<Quantity> Quantities { get; set; }
+
+        //Dbset for Comparison table
         public DbSet<Comparision> Comparisions { get; set; }
     }
 }

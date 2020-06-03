@@ -9,7 +9,6 @@
       "RepositoryLayer/1.0.0": {
         "dependencies": {
           "CommanLayer": "1.0.0",
-          "Microsoft.EntityFrameworkCore": "2.1.0",
           "Microsoft.EntityFrameworkCore.SqlServer": "2.1.0"
         },
         "runtime": {
@@ -475,9 +474,6 @@
         }
       },
       "CommanLayer/1.0.0": {
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "2.1.0"
-        },
         "runtime": {
           "CommanLayer.dll": {}
         }

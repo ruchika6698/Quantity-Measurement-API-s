@@ -65,7 +65,7 @@ namespace QuantityMeasurementAPI.Controllers
         ///  API for Delete data
         /// </summary>
         /// <param name="Id">Delete data</param>
-        /// <returns></returns>
+        /// <returns>delete data by ID</returns>
         [HttpDelete("{Id}")]
         public IActionResult DeleteQuntity(int Id)
         {
@@ -91,6 +91,7 @@ namespace QuantityMeasurementAPI.Controllers
                 throw new Exception(e.Message);
             }
         }
+
         /// <summary>
         ///  API for get all emplyee details
         /// </summary>
@@ -121,11 +122,11 @@ namespace QuantityMeasurementAPI.Controllers
             }
         }
 
-        // <summary>
+        /// <summary>
         ///  API for get specific Quantity details
         /// </summary>
-        /// <param name="ID">Update data</param>
-        /// <returns></returns>
+        /// <param name="Id">Update data</param>
+        /// <returns> data by ID </returns>
         [HttpGet("{Id}")]
         public IActionResult GetspecificQuantity(int Id)
         {
