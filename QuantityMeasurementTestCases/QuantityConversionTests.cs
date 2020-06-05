@@ -43,14 +43,21 @@ namespace QuantityMeasurementTestCases
         [Fact]
         public void GivenLengthUnitData_WhenQuantityOptionType_PassResult_Ok()
         {
-            var controller = new MeasurementController(_businessLayer, _configuration);
-            var result = new Quantity
+            try
             {
-                OptionType= "InchToYard",
-                Value = 24
-            };
-            var okResult = controller.Convert(result);
-            Assert.IsType<OkObjectResult>(okResult);
+                var controller = new MeasurementController(_businessLayer, _configuration);
+                var result = new Quantity
+                {
+                    OptionType = "InchToYard",
+                    Value = 24
+                };
+                var okResult = controller.Convert(result);
+                Assert.IsType<OkObjectResult>(okResult);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
         /// <summary>
@@ -59,14 +66,21 @@ namespace QuantityMeasurementTestCases
         [Fact]
         public void GivenWeightUnit_WhenQuantityOptionType_PassResult_Ok()
         {
-            var controller = new MeasurementController(_businessLayer, _configuration);
-            var result = new Quantity
+            try
             {
-                OptionType = "GramToKg",
-                Value = 20000
-            };
-            var okResult = controller.Convert(result);
-            Assert.IsType<OkObjectResult>(okResult);
+                var controller = new MeasurementController(_businessLayer, _configuration);
+                var result = new Quantity
+                {
+                    OptionType = "GramToKg",
+                    Value = 20000
+                };
+                var okResult = controller.Convert(result);
+                Assert.IsType<OkObjectResult>(okResult);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
         /// <summary>
@@ -75,14 +89,21 @@ namespace QuantityMeasurementTestCases
         [Fact]
         public void GivenVolumeUnit_WhenQuantityOptionType_PassResult_Ok()
         {
-            var controller = new MeasurementController(_businessLayer, _configuration);
-            var result = new Quantity
+            try
             {
-                OptionType = "MLToLiter",
-                Value = 20000
-            };
-            var okResult = controller.Convert(result);
-            Assert.IsType<OkObjectResult>(okResult);
+                var controller = new MeasurementController(_businessLayer, _configuration);
+                var result = new Quantity
+                {
+                    OptionType = "MLToLiter",
+                    Value = 20000
+                };
+                var okResult = controller.Convert(result);
+                Assert.IsType<OkObjectResult>(okResult);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
         /// <summary>
@@ -91,14 +112,21 @@ namespace QuantityMeasurementTestCases
         [Fact]
         public void GivenDegreeUnit_WhenQuantityOptionType_PassResult_Ok()
         {
-            var controller = new MeasurementController(_businessLayer, _configuration);
-            var result = new Quantity
+            try
             {
-                OptionType = "FToC",
-                Value = 100
-            };
-            var okResult = controller.Convert(result);
-            Assert.IsType<OkObjectResult>(okResult);
+                var controller = new MeasurementController(_businessLayer, _configuration);
+                var result = new Quantity
+                {
+                    OptionType = "FToC",
+                    Value = 100
+                };
+                var okResult = controller.Convert(result);
+                Assert.IsType<OkObjectResult>(okResult);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
         /// <summary>
@@ -107,16 +135,23 @@ namespace QuantityMeasurementTestCases
         [Fact]
         public void GivenLengthUnitData_WhenComparison_PassResult()
         {
-            var controller = new MeasurementController(_businessLayer, _configuration);
-            var result = new Comparision
+            try
             {
-                Value_One = 12,
-                Value_One_Unit = "Feet",
-                Value_Two= 6,
-                Value_Two_Unit= "Yard"
-            };
-            var okResult = controller.AddComparison(result);
-            Assert.IsType<OkObjectResult>(okResult);
+                var controller = new MeasurementController(_businessLayer, _configuration);
+                var result = new Comparision
+                {
+                    Value_One = 12,
+                    Value_One_Unit = "Feet",
+                    Value_Two = 6,
+                    Value_Two_Unit = "Yard"
+                };
+                var okResult = controller.AddComparison(result);
+                Assert.IsType<OkObjectResult>(okResult);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
         /// <summary>
@@ -125,16 +160,23 @@ namespace QuantityMeasurementTestCases
         [Fact]
         public void GivenDegreeUnitData_WhenComparison_PassResultEqual()
         {
-            var controller = new MeasurementController(_businessLayer, _configuration);
-            var result = new Comparision
+            try
             {
-                Value_One = 0,
-                Value_One_Unit = "C",
-                Value_Two = 0,
-                Value_Two_Unit = "C"
-            };
-            var okResult = controller.AddComparison(result);
-            Assert.IsType<OkObjectResult>(okResult);
+                var controller = new MeasurementController(_businessLayer, _configuration);
+                var result = new Comparision
+                {
+                    Value_One = 0,
+                    Value_One_Unit = "C",
+                    Value_Two = 0,
+                    Value_Two_Unit = "C"
+                };
+                var okResult = controller.AddComparison(result);
+                Assert.IsType<OkObjectResult>(okResult);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
         /// <summary>
@@ -143,16 +185,23 @@ namespace QuantityMeasurementTestCases
         [Fact]
         public void GivenVolumeUnit_WhentwoDifferentUnit_ComparisonandPassResultEqual()
         {
-            var controller = new MeasurementController(_businessLayer, _configuration);
-            var result = new Comparision
+            try
             {
-                Value_One = 20,
-                Value_One_Unit = "Liter",
-                Value_Two = 4.9625,
-                Value_Two_Unit = "Gallon"
-            };
-            var okResult = controller.AddComparison(result);
-            Assert.IsType<OkObjectResult>(okResult);
+                var controller = new MeasurementController(_businessLayer, _configuration);
+                var result = new Comparision
+                {
+                    Value_One = 20,
+                    Value_One_Unit = "Liter",
+                    Value_Two = 4.9625,
+                    Value_Two_Unit = "Gallon"
+                };
+                var okResult = controller.AddComparison(result);
+                Assert.IsType<OkObjectResult>(okResult);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
 
         /// <summary>
@@ -161,16 +210,23 @@ namespace QuantityMeasurementTestCases
         [Fact]
         public void GivenWeightUnit_WhentwoDifferentUnit_ComparisonandPassResult()
         {
-            var controller = new MeasurementController(_businessLayer, _configuration);
-            var result = new Comparision
+            try
             {
-                Value_One = 100,
-                Value_One_Unit = "Kg",
-                Value_Two = 10,
-                Value_Two_Unit = "Tone"
-            };
-            var okResult = controller.AddComparison(result);
-            Assert.IsType<OkObjectResult>(okResult);
+                var controller = new MeasurementController(_businessLayer, _configuration);
+                var result = new Comparision
+                {
+                    Value_One = 100,
+                    Value_One_Unit = "Kg",
+                    Value_Two = 10,
+                    Value_Two_Unit = "Tone"
+                };
+                var okResult = controller.AddComparison(result);
+                Assert.IsType<OkObjectResult>(okResult);
+            }
+            catch (Exception e)
+            {
+                throw new Exception(e.Message);
+            }
         }
     }
 }
