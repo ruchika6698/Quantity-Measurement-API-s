@@ -24,7 +24,8 @@ namespace CommanLayer
             KgToGram, KgToTone,
             ToneToGram, ToneToKg,
             // TempratureMeasurements
-            CToF, FToC
+            CToF, FToC, CToK, 
+            FToK, KToC, KToF
         }
         // All units
         public enum Unit
@@ -36,7 +37,7 @@ namespace CommanLayer
             // weight units 
             Gram, Kg, Tone,
             // temperature units 
-            C , F
+            C , F ,K
         }
     }
 }
