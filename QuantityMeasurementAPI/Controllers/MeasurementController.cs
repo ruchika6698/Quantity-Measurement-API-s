@@ -31,7 +31,7 @@ namespace QuantityMeasurementAPI.Controllers
         /// <param name="Info"></param>
         /// <returns> add conversion in database </returns>
         [HttpPost]
-        [Route("addnewentry")]
+        [Route("conversion")]
         public IActionResult Convert([FromBody]Quantity  Info)
         {
             try
@@ -66,7 +66,7 @@ namespace QuantityMeasurementAPI.Controllers
         /// </summary>
         /// <param name="Id">Delete data</param>
         /// <returns>delete data by ID</returns>
-        [HttpDelete("{Id}")]
+        [HttpDelete("conversion/{Id}")]
         public IActionResult DeleteQuntity(int Id)
         {
             try
@@ -95,7 +95,7 @@ namespace QuantityMeasurementAPI.Controllers
         /// <summary>
         ///  API for get all emplyee details
         /// </summary>
-        [HttpGet]
+        [HttpGet("conversion")]
         public ActionResult<IEnumerable<Quantity>> GetAllQuantity()
         {
             try
@@ -127,7 +127,7 @@ namespace QuantityMeasurementAPI.Controllers
         /// </summary>
         /// <param name="Id">Update data</param>
         /// <returns> data by ID </returns>
-        [HttpGet("{Id}")]
+        [HttpGet(("conversion/{Id}"))]
         public IActionResult GetspecificQuantity(int Id)
         {
             try

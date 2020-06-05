@@ -255,9 +255,9 @@ namespace BusinessLayer.Services
                 }
                 return Math.Round(result, 2);
             }
-            catch (CustomException)
+            catch (Exception e)
             {
-                throw new CustomException(CustomException.ExceptionType.TYPE_NOT_MATCH);
+                throw new Exception(e.Message);
             }
         }
 
@@ -346,6 +346,10 @@ namespace BusinessLayer.Services
                 else if (Unit_Value == Unit.C.ToString())
                 {
                     operationType = "CToF";
+                }
+                else if (Unit_Value == Unit.K.ToString())
+                {
+                    operationType = "KToF";
                 }
                 return operationType;
             }
@@ -437,7 +441,7 @@ namespace BusinessLayer.Services
                 {
                     return "Ml";
                 }
-                else if (quantity.OptionType == OprationType.CToF.ToString())
+                else if (quantity.OptionType == OprationType.CToF.ToString() || quantity.OptionType == OprationType.KToF.ToString())  
                 {
                     return "F";
                 }
