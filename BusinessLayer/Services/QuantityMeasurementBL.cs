@@ -237,6 +237,22 @@ namespace BusinessLayer.Services
                 {
                     result = (value * 9 / 5) + 32;
                 }
+                else if (operation == OprationType.CToK.ToString())
+                {
+                    result = (value + 273.15);
+                }
+                else if (operation == OprationType.FToK.ToString())
+                {
+                    result = ((value - 32) * 5 / 9) + 273.15;
+                }
+                else if (operation == OprationType.KToC.ToString())
+                {
+                    result = (value - 273.15);
+                }
+                else if (operation == OprationType.KToF.ToString())
+                {
+                    result = ((value - 32) * 9 / 5) + 273.15;
+                }
                 return Math.Round(result, 2);
             }
             catch (CustomException)
