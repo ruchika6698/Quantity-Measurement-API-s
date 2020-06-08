@@ -3,6 +3,7 @@ using RepositoryLayer.ApplicationDatabase;
 using RepositoryLayer.Interface;
 using System;
 using System.Collections.Generic;
+using System.Linq;
 using System.Text;
 
 namespace RepositoryLayer.Services
@@ -50,15 +51,16 @@ namespace RepositoryLayer.Services
         /// </summary>
         /// <param name="Id"></param>
         /// <returns>Conversion result</returns>
-        public Quantity DeleteQuntity(int Id)
+        public IEnumerable<Quantity> DeleteQuntity(int Id)
         {
             try
             {
-                Quantity quantity = dBContext.Quantities.Find(Id);
+                List<Quantity> quantity = dBContext.Quantities.Take(3).ToList();
+                //Quantity quantity = dBContext.Quantities.Find(Id);
                 if(quantity != null)
                 {
                     //Remove Data in database
-                    dBContext.Quantities.Remove(quantity);
+                    dBContext.Quantities.RemoveRange(quantity);
                     //saves all changes in database
                     dBContext.SaveChanges();
                 }

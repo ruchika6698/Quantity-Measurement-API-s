@@ -19,7 +19,7 @@ namespace RepositoryLayer.Interface
         /// </summary>
         /// <param name="Id">Delete data</param>
         /// <returns>delete data by ID</returns>
-        Quantity DeleteQuntity(int Id);
+        IEnumerable<Quantity> DeleteQuntity(int Id);
 
         /// <summary>
         ///  API for get all emplyee details

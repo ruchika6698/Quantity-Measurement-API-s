@@ -44,7 +44,7 @@ namespace BusinessLayer.Services
         /// </summary>
         /// <param name="Id">Delete data</param>
         /// <returns></returns>
-        public Quantity DeleteQuntity(int Id)
+        public IEnumerable<Quantity> DeleteQuntity(int Id)
         {
             try
             {

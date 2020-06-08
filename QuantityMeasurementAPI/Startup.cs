@@ -33,6 +33,14 @@ namespace QuantityMeasurementAPI
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            services.AddCors(options =>
+            {
+                options.AddPolicy("CorsPolicy",
+                    builder => builder.AllowAnyOrigin()
+                    .AllowAnyMethod()
+                    .AllowAnyHeader()
+                    .AllowCredentials());
+            });
             services.AddTransient<IQuantityMeasurementRL, QuantityMeasurementRL>();
             services.AddTransient<IQuantityMeasurementBL, QuantityMeasurementBL>();
             services.AddDbContextPool<AppDbContext>(
@@ -58,7 +66,13 @@ namespace QuantityMeasurementAPI
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+            app.UseCors("CorsPolicy");
+            app.UseMvc(routes =>
+            {
+                routes.MapRoute(
+                    name: "default",
+                    template: "{controller=Home}/{action=Index}/{id?}");
+            });
             app.UseSwagger();
             app.UseSwaggerUI(
                 c => { c.SwaggerEndpoint("/swagger/v1/swagger.json", "Core API"); }
