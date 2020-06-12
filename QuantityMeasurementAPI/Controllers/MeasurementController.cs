@@ -66,7 +66,7 @@ namespace QuantityMeasurementAPI.Controllers
         /// <param name="Id">Delete data</param>
         /// <returns>delete data by ID</returns>
         [HttpDelete("{Id}")]
-        public ActionResult<IEnumerable<Quantity>> DeleteQuntity(int Id)
+        public IActionResult DeleteQuntity(int Id)
         {
             try
             {
